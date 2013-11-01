@@ -1,0 +1,230 @@
+/*  
+Theme Name: FitnessForYou
+Theme URI:
+Description:FitnessForYou
+Version: 1.0
+Author: Bogdana Buchkovska
+Author URI: 
+*/
+
+@charset "utf-8";
+
+/* CSS Document */
+*{
+	margin:0; padding:0;
+	}
+img{
+	border:0;
+	}
+body{
+	background-color:#f2dfdb;
+	font-family: "Segoe UI Light", "Segoe UI", verdana, arial, sansSerif;
+	font-weight: 100;
+	min-width:1000px;
+	}
+	#main{
+		margin:0 auto;
+		width:940px;
+		height:255px;
+		z-index:1;
+		position:relative;
+	}
+		#general{
+			background-color:#faf0ee;
+			border:#9a8a87 2px solid;
+			border-radius: 15px;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			margin-left:100px;
+			margin-top:-50px;
+			width:850px;
+			position:relative;
+			z-index:2;
+			overflow:hidden;
+		}
+		
+
+/*		MENU		*/
+			.menu{
+				overflow:hidden; list-style:none; background:#413533;
+				border-radius: 13px 13px 0 0;
+				-moz-border-radius:  13px 13px 0 0;
+				-webkit-border-radius:  13px 13px 0 0;	
+			}
+				.menu li{
+					float:left; background: url(../image/line_menu.png) left center no-repeat; padding:15px 35px;
+				}
+				.menu li:first-child{
+					float:left; background:none; padding:15px 35px;
+				}		
+				.menu li a{	
+					font:18px "Century Gothic"; color:#fff; text-decoration:none;
+				}
+				.menu li a:hover{	
+					font:18px "Century Gothic"; color:#fff; text-decoration:underline;
+				}		
+				.search-main{
+					float:right; margin: 0 25px 0 0;
+				}		
+					.serch-txt{
+						height:23px; background:#; border:1px solid #fff; width:230px; margin: 0 10px 0 0;
+						border-radius: 2px;
+						-moz-border-radius: 2px;
+						-webkit-border-radius: 2px;
+					}	
+					.serch-btn{
+						position:relative; top:10px;
+					}
+/*		END.MENU		*/
+	
+	
+/*		SLIDER		*/					
+			#slider{
+				background-color:#FFF;
+				border-radius: 15px;
+				-moz-border-radius: 15px;
+				-webkit-border-radius: 15px;
+				height: 250px;
+				width: 800px;
+				overflow: hidden;
+				position: relative;
+				margin: 15px auto 25px;
+}
+				#cyclePager{
+					position: absolute;
+					height: 18px;
+					overflow: hidden;
+					right: 20px;
+					bottom: 20px;
+					z-index: 99;
+				}
+					#cyclePager a{
+						background: transparent url(../image/pager-gal.png) 0 0 no-repeat;
+						display: block;
+						float: left;
+						height: 17px;
+						margin-left: 10px;
+						text-indent: -9999px;
+						width: 17px;
+					}
+					#cyclePager a:hover,#cyclePager a.activeSlide{
+						background-position: -17px 0;
+					}	
+/*		END.SLIDER		*/	
+		
+			
+			.content{
+				width:580px; float:left; margin:0 0 0 20px;
+			}		
+		
+		
+			
+/*		POST		*/
+				.post-main{
+					background:#faf4f3; border:1px solid #cebfbc; margin:0 0 20px 0;
+					border-radius: 8px;
+					-moz-border-radius: 8px;
+					-webkit-border-radius: 8px;
+				}
+					.imgstyle{
+						float:left; margin:0 15px 5px 0; border:#b9b7b5 solid 2px;
+					}
+					.post-main h1{
+						background:#f1ddd9; font:normal 24px Verdana; color:#413533; padding: 15px; margin: 0 0 5px 0;
+						border-radius: 8px 8px 0 0;
+						-moz-border-radius: 8px 8px 0 0;
+						-webkit-border-radius: 8px 8px 0 0;
+					}
+						.post-main h1 a{
+							font:normal 24px Verdana; color:#3f282f; text-decoration:none;
+						}
+						.post-main h1 a:hover{
+							font:normal 24px Verdana; color:#3f282f; text-decoration:underline;
+						}	
+							.post-main h1 span{
+								font:normal 12px Verdana; color:#413533;
+								float: right;
+								margin-right:60px;
+								margin-top:10px;
+							}
+					.post{
+						margin: 15px;
+					}		
+						.post p{
+							font:12px Verdana; margin: 0 0 15px;
+						}
+						.post a{
+							color:#413533; text-decoration:underline;
+						}	
+						.post a:hover{
+							color:#413533; text-decoration:none;
+						}	
+/*		END.POST		*/	
+
+
+/*		SIDEBAR		*/
+			.sidebar{
+				float:left; margin: 0 20px 0 20px; width: 200px;
+			}
+				.vidget{
+					background:#f1ddd9; border:1px solid #b6a7a4;
+					border-radius: 8px;
+					-moz-border-radius: 8px;
+					-webkit-border-radius: 8px;
+				}	
+					.vidget h2{	
+						background:#413533; color:#fff; font:18px "Century Gothic"; text-align:center; padding:10px 0;
+						border-radius: 8px 8px 0 0;
+						-moz-border-radius: 8px 8px 0 0;
+						-webkit-border-radius: 8px 8px 0 0;
+					}	
+					.vidget ul{
+						list-style:none; padding:25px 15px;
+					}	
+						.vidget ul li{
+							border-bottom:1px solid #c8b6b3; border-top:1px solid #fff; padding: 5px 0 5px 10px;
+						}
+						.vidget ul li:first-child{
+							border-top:none;
+						}
+						.vidget ul li:last-child{
+							border-bottom:none;
+						}		
+							.vidget ul li a{
+								color:#000; font:14px "Century Gothic"; text-decoration:none;
+							}
+							.vidget ul li a:hover{
+								color:#000; font:14px "Century Gothic"; font-weight:900;
+							}		
+/*		END.SIDEBAR		*/
+		
+				
+/*		FOOTER		*/						
+		.footer{
+			overflow:hidden; padding-top: 30px; padding-bottom:30px;
+		}
+			.footer_left{
+				float:left; margin-left: 150px;
+			}					
+				.footer_left p{
+					font:14px "Century Gothic"; color:#413533; font-style:italic;
+				}		
+			.menu-foot{
+				float:left; margin: 0 0 0 100px;
+			}	
+				.menu-foot h2{
+					font:normal 24px "Century Gothic"; color:#120f0e;
+				}
+				.menu-foot ul{
+					list-style:none;
+				}	
+					.menu-foot ul li{
+						list-style:none;
+					}	
+						.menu-foot ul li a{
+							font:14px "Century Gothic"; color:#413533;  text-decoration:none;
+						}
+						.menu-foot ul li a:hover{
+							font:14px "Century Gothic"; color:#413533; text-decoration:underline;
+						}	
+/*		END.FOOTER		*/	
